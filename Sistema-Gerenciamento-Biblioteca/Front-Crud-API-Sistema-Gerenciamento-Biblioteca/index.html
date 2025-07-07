@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <hl>Lista de Livros</hl>
+            <button id="toggleThemeBtn">Trocar Tema</button>
+        </header>
+        <div class="form-container">
+            <h2>Cadastrar Livros</h2>
+            <input type="text" id="tituloInput" placeholder="Título">
+            <input type="text" id="autorInput" placeholder="Autor">
+            <input type="text" id="npaginasInput" placeholder="Numero de Páginas">
+            <input type="text" id="editoraInput" placeholder="Editora">
+            <input type="text" id="anopublicacao" placeholder="Ano de Lançamento">
+            <input type="text" id="generoLivroInput" placeholder="Gênero do Livro ">
+            <input type="text" id="capaInput" accept="image/*" placeholder="URL Imagem">
+            <button onclick="addLivro()">Adicionar Livros</button>
+            <h3> Pesquisar Livros</h3>
+            <input type="text" id="textoDigitadoinput" placeholder="Pesquisar ">
+            <button onclick="searchBooksForGenre()">Pesquisar</button>
+        </div>
+        <section id="cardContainer" class="card-container"></section>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
